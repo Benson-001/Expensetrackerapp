@@ -82,15 +82,12 @@ function App() {
   };
 
   // Filtered expenses based on search term
-  const filteredExpenses = expenses.filter((expense) =>
+  const filteredExpenses = expenses.filter(expense =>
     expense.label.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   // Calculate total amount
-  const totalAmount = filteredExpenses.reduce(
-    (total, expense) => total + expense.value,
-    0
-  );
+  const totalAmount = filteredExpenses.reduce((total, expense) => total + expense.value, 0);
 
   return (
     <div>
