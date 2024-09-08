@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "serve -s dist"
+    "start": "npm install -g serve && serve -s dist"
   },
   "dependencies": {
     "@mui/x-charts": "^7.16.0",
